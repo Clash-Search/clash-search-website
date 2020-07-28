@@ -37,7 +37,7 @@
        
     </div>
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
       <p>&copy; 2019 Clash Search</p>
       <button onclick="mode()" id="modeBTN">Light on!</button>
     </div>
@@ -49,6 +49,11 @@
     function mode() {
        var element = document.body;
        element.classList.toggle("dark-mode");
+       let navBar = document.getElementById("myTopnav")
+       navBar.classList.toggle("dark-nav")
+       let footer = document.getElementById("footer")
+       footer.classList.toggle("dark-nav") 
+      //  document.getElementById("myTopnav").style.backgroundColor = "blue";
        var change = document.getElementById("modeBTN");
                 if (change.innerHTML == "Light on!")
                 {

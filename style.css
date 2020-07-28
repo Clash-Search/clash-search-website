@@ -85,7 +85,11 @@ body{
     background-color: white;
     color: black;
   }
-
+.dark-nav {
+  background-color: #ddd;
+  border: 2px solid black;
+  color: black;
+}
   /* Button */
 
   .button {
