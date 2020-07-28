@@ -26,12 +26,17 @@
             <li><a href="#"onclick="myFunction()">Toggle theme</a></li>
           </ul>
         <div class="header">
-            <h1>Clash Search</h1>
-            <img src="./Clash Search.png" alt="clash search logo" width="200">
+            <h1>ClashPerk Search</h1>
+            <div align="center">
+                <img class="mySlides" src="./Clash Search.png" width="200">
+                <img class="mySlides" src="https://clashperk.xyz/images/icon.png" width="200">
+              </div>
             <p>tag line goes here</p>
+            <button class="button button2"><span><a href="#">Invite me!</a></span></button>
         </div>
        
     </div>
+    
 
 
     <script>
@@ -39,6 +44,22 @@
        var element = document.body;
        element.classList.toggle("dark-mode");
     }
+
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+    
     </script>
 </body>
 </html>
