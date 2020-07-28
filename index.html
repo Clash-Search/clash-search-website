@@ -16,6 +16,29 @@
      <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!--navbar-->
+        <ul>
+            <li><a href="#home"  class="active" >Home</a></li>
+            <li><a href="#news">Features</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#"onclick="myFunction()">Toggle theme</a></li>
+          </ul>
+        <div class="header">
+            <h1>Clash Search</h1>
+            <img src="./Clash Search.png" alt="clash search logo" width="200">
+            <p>tag line goes here</p>
+        </div>
+       
+    </div>
+
+
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 </body>
 </html>

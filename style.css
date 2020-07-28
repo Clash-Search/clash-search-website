@@ -1,0 +1,54 @@
+
+
+@font-face{
+    font-family: coc;
+    src: url(fonts.ttf)
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2C2F33;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #23272A;
+    font-family: coc;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #915cff;
+  }
+
+
+
+.header{
+    text-align: center;
+    font-family: coc;
+    color: #915cff;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+  }
