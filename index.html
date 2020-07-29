@@ -12,9 +12,14 @@
      <meta name="theme-color" content="#915cff" />
      <link type="application/json+oembed" href="https://clash-search.netlify.app/embed/provider.json">
      <!--------------------->
+     <!--Icon-->
+     <link rel="icon" href="https://clash-search.netlify.app/Clash Search.png" type="image/gif" sizes="16x16">
+     <!--CSS-->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div class="container">
@@ -24,13 +29,13 @@
           <a href="#news">Features</a>
           <a href="#contact">Support</a>
           <a href="#about">About</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="navBar()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
         <div class="header">
             <h1>Clash Search</h1>
-            <img src="./Clash Search.png" width="200">
+            <img src="./assets/images/Clash Search.png" width="200">
             <p>Clash of Clans statistics Discord bot</p>
             <button class="button button2"><span><a href="https://discord.com/api/oauth2/authorize?client_id=713067468209258557&permissions=8&scope=bot">Invite me!</a></span></button>
         </div>
@@ -39,38 +44,11 @@
     <!-- Footer -->
     <div class="footer" id="footer">
       <p>&copy; 2019 Clash Search</p>
-      <button onclick="mode()" id="modeBTN">Light on!</button>
+      <button onclick="mode()" id="modeBTN">Light mode ☀️</button>
     </div>
 
 
 
-
-    <script>
-    function mode() {
-       var element = document.body;
-       element.classList.toggle("dark-mode");
-       let navBar = document.getElementById("myTopnav")
-       navBar.classList.toggle("dark-nav")
-       let footer = document.getElementById("footer")
-       footer.classList.toggle("dark-nav") 
-      //  document.getElementById("myTopnav").style.backgroundColor = "blue";
-       var change = document.getElementById("modeBTN");
-                if (change.innerHTML == "Light on!")
-                {
-                    change.innerHTML = "Light off!";
-                }
-                else {
-                    change.innerHTML = "Light on!";
-                }
-    }
-    function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-    </script>
+<script src="./script.js"></script>
 </body>
 </html>

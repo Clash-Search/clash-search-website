@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: coc;
-    src: url(fonts.ttf)
+    src: url(../fonts/fonts.ttf)
 }
 
 body{
@@ -128,6 +128,14 @@ body{
   .button2:hover:before {content:"Reply!"}
   */
 
+#modeBTN {
+  display: inline-block;
+  text-align: center;
+  font-family: coc;
+  border-radius: 4px 4px;
+  background-color: #915cff; 
+  border: none;
+}
 
   /* Footer */
   .footer {
@@ -138,4 +146,5 @@ body{
     background-color: #23272A;
     color: white;
     text-align: center;
- }
+    font-family: monospace;
+  }
