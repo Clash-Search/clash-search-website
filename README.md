@@ -1,4 +1,3 @@
-![Clash Search loho](https://clash-search.netlify.app/assets/images/clash%20Search.png)
 <img src="https://clash-search.netlify.app/assets/images/clash%20Search.png" width="40%">
 # Clash Search Website
 
