@@ -147,4 +147,6 @@ body{
     color: white;
     text-align: center;
     font-family: monospace;
+    height: 50px;
+    margin-top: -50px;
   }
